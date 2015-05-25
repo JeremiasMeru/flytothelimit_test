@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us-Fly To The Limit - Explore the secret of the sky adventure of Queentown and Wanaka</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="FlyToTheLimit is the New Zealand's best sky experience which offers adventure flights, air transport and gliding sight seeing based in the scenic capital of New Zealand, and to the world"/>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<header>
+				<a href="index.html"><img src="images/fttllogo.jpg" alt="FTTL"/></a>
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="adventureflight.html" title="Adventure Flight">Adventure</a></li>
+							<li><a href="sightseeing.html" title="Sightseeing">Sightseeing</a></li>
+							<li><a href="charterflight.html" title="Charter Flight">Charter</a></li>
+							<li><a href="gallery.html" title="Gallery">Gallery</a></li>
+							<li><a href="booking.html" title="Booking">Booking</a></li>
+							<li><a href="aboutus.html" title="About Us">About Us</a></li>
+							<li id="current"><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+						</ul>
+					</nav>	
+				</div>
+			</header><!-- /header -->
+		</div>
+		<div id="lake">
+			<img src="images/lakewanaka.jpg" alt="Lake Wanaka">
+		</div>
+		<div id="mainsectioncontactus">
+			<div id="hometitle">
+					<h1>CONTACT US</h1>
+			</div>
+			<div id="fttldescription">
+					<p class="p1">CONTACT US FOR MORE INQUIRIES</p>
+					<hr>
+
+					<p class="p2">We are operating in Queenstown and Wanaka, New Zealand. We offer tourists a range of scenic flights in both fixed wing and helicopters, as well as high adventure in a stunt plane, or the most peaceful flight experience possible in a glider high above the mountains. specialize in one-off charters, and delivery and pickup for trampers, also providing a provisioning service for fresh supplies during long excursions. </p>
+			</div>
+
+			<div id="contactcontainer">
+				<h3>CONTACT US</h3>
+				<form method="POST" action="http://brettt.yoobee.net.nz/formtest/" id="contactusform" novalidate>
+           			<div class="form-group">
+           				<div class="for_label">
+               	 			<label for="firstname">First Name:</label> 
+               	 		</div>
+               	 		<div class="for_input">         
+                			<input type="text" placeholder="First Name" id="firstname" name="firstname" required class="fv-minlength-2 hello"> <!-- value="username" -->
+                		</div>
+                		<div id="firstname-error" class="danger"></div>
+            		</div><br>        
+            		<div class="form-group">
+            			<div class="for_label">
+                 			<label for="lastname">Last Name:</label>
+                 		</div>
+                 		<div class="for_input">
+                 			<input type="text" placeholder="Last Name" id="lastname" name="lastname"
+                 			required class="fv-minlength-2 hello">
+                 		</div>
+                 		<div id="lastname-error" class="danger"></div>                 	
+            		</div><br>
+            		<div class="form-group">
+            			<div class="for_label">
+                 			<label for="email">Email:</label>
+                 		</div>
+                 		<div class="for_input">
+                 			<input type="email" placeholder="Email" id="email" name="email" required>
+                 		</div>
+                 		<div id="email-error" class="danger"></div>                 	
+            		</div><br>     
+        			<div class="form-group">
+                 	 	<div class="for_label">
+                 	 		<label for="message">Message: </label>
+                 	 	</div>
+                  		<div class="for_input">
+                  			<textarea id="message" name="message" rows="15" cols="60" required class="fv-minlenght-10" ></textarea>
+                  		</div>
+                  		<div id="message-error" class="danger"></div> 
+            		</div><br>
+            		<div class="form-submit">
+						<button id="submit-button" type="submit">Submit Your Message</button>
+					</div>
+            			
+                </form>
+            </div>
+		</div>
+
+		<div id="footerwrapper">
+			<footer>
+				<div class="footer">
+					<p>&copy;2015 FlyToTheLimit Copyright</p>
+					<p>All Rights Reserved, P.O. Box 1234,
+					Queenstown, New Zealand</p>
+					<form>
+						<input type="button" value="Print this page" onclick="myFunction()"/> 
+					</form>
+				</div>
+				<div class="footercontactus">
+					<p><a href="contactus.html" title="Contact Us">Contact Us</a></p>
+					<p><a href="index.html" title="homepage">Home</a></p>
+					<p id="sitemap"><a href="sitemap.html" title="sitemap">FTTL SiteMap</a></p>
+				</div>
+			</footer>
+		</div>
+	</div>
+<script src="js/form-validation-web.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+	var contactForm = document.querySelector("#contactusform");
+
+	addFormValidation(contactForm);
+
+});
+</script>
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
+</body>
+</html>

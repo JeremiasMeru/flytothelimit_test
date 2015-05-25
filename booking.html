@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking for Fly To The Limit - Explore the secret of the sky adventure of Queentown and Wanaka</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/rome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="FlyToTheLimit is the New Zealand's best sky experience which offers adventure flights, air transport and gliding sight seeing based in the scenic capital of New Zealand, and to the world"/>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<header>
+				<a href="index.html"><img src="images/fttllogo.jpg" alt="FTTL"/></a>
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="adventureflight.html" title="Adventure Flight">Adventure</a></li>
+							<li><a href="sightseeing.html" title="Sightseeing">Sightseeing</a></li>
+							<li><a href="charterflight.html" title="Charter Flight">Charter</a></li>
+							<li><a href="gallery.html" title="Gallery">Gallery</a></li>
+							<li id="current"><a href="booking.html" title="Booking">Booking</a></li>
+							<li><a href="aboutus.html" title="About Us">About Us</a></li>
+							<li><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+						</ul>
+					</nav>	
+				</div>
+			</header><!-- /header -->
+		</div>
+		<div id="lake">
+			<img src="images/lakewanaka.jpg" alt="Lake Wanaka">
+		</div>
+		<div id="mainsectionbooking">
+			<div id="hometitle">
+				<h1>BOOK YOUR DREAM ADVENTURE</h1>
+			</div>
+			<div id="fttldescription">
+					<p class="p1">BOOK YOUR DREAM ADVENTURE</p>
+					<hr>
+
+					<p class="p2">We are operating in Queenstown and Wanaka, New Zealand. We offer tourists a range of scenic flights in both fixed wing and helicopters, as well as high adventure in a stunt plane, or the most peaceful flight experience possible in a glider high above the mountains. specialize in one-off charters, and delivery and pickup for trampers, also providing a provisioning service for fresh supplies during long excursions. </p>
+			</div>
+
+			<div id="bookingcontainer">
+				<h3 class="bookingrequest">BOOKING REQUEST</h3>
+				<form method="POST" action="http://brettt.yoobee.net.nz/formtest/" id="bookingform" novalidate>
+					<div class="form-booking">
+               	 		<div class="for_label">
+               	 			<label for="firstname">First Name:</label>
+               	 		</div>
+               	 		<div class="for_input">
+                			<input type="text" placeholder="First Name" id="firstname" name="firstname" required class="fv-minlength-2 hello"> <!-- value="firstname" -->
+                		</div>
+                		<div id="firstname-error" class="danger"></div>
+            		</div><br>
+					<div class="form-booking">
+						<div class="for_label">
+               	 			<label for="lastname">Last Name:</label>
+               	 		</div>
+               	 		<div class="for_input">
+                			<input type="text" placeholder="Last Name" id="lastname" name="lastname" required class="fv-minlength-2 hello"> <!-- value="lastname" -->
+                		</div>
+                		<div id="lastname-error" class="danger"></div>
+            		</div><br>
+            		<div class="form-booking">
+            			<div class="for_label">
+               	 			<label for="email">Email:</label>
+               	 		</div>
+               	 		<div class="for_input">
+                			<input type="email" placeholder="Email" id="email" name="email" required class="fv-minlength-2 hello"> <!-- value="email" -->
+                		</div>
+                		<div id="email-error" class="danger"></div>
+            		</div><br>
+					<div class="form-booking">
+						<div class="for_label">
+               	 			<label for="contactno">Contact No.:</label>
+               	 		</div>
+               	 		<div class="for_input">
+                			<input type="tel" placeholder="Contact No." id="contactno" name="contactno" required class="fv-minlength-7 hello"> <!-- value="contactno" -->
+                		</div>	
+                		<div id="contactno-error" class="danger"></div>
+            		</div><br>
+					<div class="form-booking">
+						<div class="for_label">
+               	 			<label for="country">Country:</label>
+               	 		</div>
+               	 		<div class="for_input">
+                			<input type="text" placeholder="Country" id="country" name="country" required class="fv-minlength-2 hello"> <!-- value="country" -->
+                		</div>
+                		<div id="country-error" class="danger"></div>
+            		</div><br>
+            		<div class="form-booking">
+            			<div class="for_label">
+							<label for="tourtype">Tour Type:</label>
+						</div>
+						<div class="for_input">
+							<select id="tourtype" name="tourtype">
+								<option value="please_select">Please Select as Listed Below</option>
+								<option value="adventureflight-stuntplane">Adventure Flight - Stunt Plane</option>
+								<option value="adventureflight-pumpingacrobatic">Adventure Flight - Pumping Acrobatic</option>
+								<option value="adventureflight-peacefulgliding">Adventure Flight - Peaceful Gliding</option>
+								<option value="sightseeing-wanakalake">Sight Seeing - Wanaka Lake</option>
+								<option value="sightseeing-remotelakes">Sight Seeing - Remote Lakes</option>
+								<option value="sightseeing-queenstownmountain">Sight Seeing - Queenstown Mountains</option>
+								<option value="charterflight-one_offtrip">Charter Flight - One Off Trip</option>
+								<option value="charterflight-tramping">Charter Flight - Tramping</option>
+								<option value="charterflight-freshsuppliesdelivery">Charter Flight - Fresh Supplies Delivery</option>
+							</select>
+						<div id="tourtype-error" class="danger"></div>
+						</div>
+					</div><br>
+					
+					<div class="form-booking">
+						<div class="for_label">
+							<label>Proposed Date/Time:</label>	
+						</div>
+						<div>
+							<input id="dt" name="proposed_date/time" placeholder="yyyy-mm-dd hh:mm" required class="fv-minlenght-12">
+							<div id="dt-error" class="danger"></div>
+						</div>
+
+					</div><br>
+					
+					<div class="form-booking">
+						<div class="for_label">
+							<label for="comments">Questions/Comments:</label>	
+						</div>
+						<div class="for_input">
+							<textarea name="comments" id="comments" rows="15" cols="60" maxlength="1500" required class="fv-minlenght-10"></textarea>
+						<div id="comments-error" class="danger"></div> 
+						</div>
+					</div><br>
+					<div class="form-booking">
+						<div id="for_submit">
+						<input type="submit" value="SUBMIT">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="footerwrapper">
+			<footer>
+				<div class="footer">
+					<p>&copy;2015 FlyToTheLimit Copyright</p>
+					<p>All Rights Reserved, P.O. Box 1234,
+					Queenstown, New Zealand</p>
+					<form>
+						<input type="button" value="Print this page" onclick="myFunction()"/> 
+				</form>
+				</div>
+				
+				<div class="footercontactus">
+					<p><a href="contactus.html" title="Contact Us">Contact Us</a></p>
+					<p><a href="index.html" title="homepage">Home</a></p>
+					<p id="sitemap"><a href="sitemap.html" title="sitemap">FTTL SiteMap</a></p>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+<script src="js/form-validation-web.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+	var bookingForm = document.querySelector("#bookingform");
+
+	addFormValidation(bookingForm);
+
+});
+</script>
+<script src="js/rome.js"></script>	
+<script>
+function myFunction() {
+    window.print();
+}
+</script>	
+</body>
+</html>
